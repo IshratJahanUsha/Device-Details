@@ -1,0 +1,29 @@
+
+.header{
+    text-align: center;
+}
+.title{
+    color: rgb(5, 44, 150);
+}
+.title span{
+    color: blueviolet;
+}
+.search-btn{
+    color: white;
+    background-color:rgb(5, 44, 150);
+    border: none;
+    border-radius: 3px;
+    padding: .20rem 1rem;
+}
+
+/* .cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1rem;
+}
+
+.card{
+    height: 15rem;
+
+    border: 1px solid rgb(5, 44, 150);
+} */
