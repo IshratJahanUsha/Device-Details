@@ -8,7 +8,7 @@
 .title span{
     color: blueviolet;
 }
-.search-btn{
+.btn{
     color: white;
     background-color:rgb(5, 44, 150);
     border: none;
@@ -16,14 +16,30 @@
     padding: .20rem 1rem;
 }
 
-/* .cards{
+#search-result{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 1rem;
+    margin: 10px 50px 20px;
 }
 
-.card{
-    height: 15rem;
+#search-result div{
+    text-align: center;
+    border: 2px solid rgb(80, 52, 145);
+    border-radius: .5rem;
+    box-shadow: 3px 5px 5px gray;
+    width: 25rem;
+}
 
-    border: 1px solid rgb(5, 44, 150);
-} */
+#search-result div img {
+    width: 30%;
+    height: 30%;
+    margin-top: 1rem;
+}
+
+#details-btn{
+    margin-bottom: 1rem;
+}
+
+
+
