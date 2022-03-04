@@ -43,7 +43,7 @@ const displaySearchResults = datas => {
     let searchResult = document.getElementById('search-result');
 
     datas.slice(0,20).forEach(eachData => {
-
+        
         //making cards
         const div = document.createElement('div')
         div.classList.add('device-card');
@@ -52,7 +52,7 @@ const displaySearchResults = datas => {
             <img src="${eachData.image}" alt="device">
             <h3 class="card-title">Model:${eachData.phone_name}</h3>
             <h4 class="card-text">Brand:${eachData.brand}</h4>
-            <button id="details-btn" class="btn" onclick = "loadDeviceDetails('${eachData.slug}')"><a href="">Details</a></button>
+            <a href="#device-details"> <button id="details-btn" class="btn" onclick = "loadDeviceDetails('${eachData.slug}')">Details</button> </a>
         </div>`
 
         searchResult.appendChild(div);

@@ -6,16 +6,23 @@
     outline: none;
 }
 
+section{
+    margin: 1rem 3.2rem;
+}
+
 /* header section starts */
 .header{
     text-align: center;
 }
+
 .title{
     color: rgb(15, 170, 218);
 }
+
 .title span{
     color: rgb(5, 44, 150);
 }
+
 #search-btn{
     color: white;
     background-color:rgb(15, 170, 218);
@@ -41,30 +48,31 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 1rem;
-    margin: 10px 50px 20px;
+    /* margin: 10px 50px 20px; */
 }
 
-#search-result div{
+.device-card{
     text-align: center;
     border: 2px solid rgb(15, 170, 218);
     border-radius: .5rem;
     box-shadow: 3px 5px 5px gray;
-    width: 25rem;
+    height: 25rem;
 }
 
-#search-result div img {
+.device-card img {
     padding: .5rem;
     height: 16rem;
     width: 12rem;
     margin-top: 1rem;
 }
 
-#search-result div h3{
+.device-card h3{
     color: rgb(15, 170, 218);
 }
 
 #details-btn{
     color: white;
+    text-decoration: none;
     background-color:rgb(5, 44, 150);
     border: none;
     border-radius: 3px;
@@ -74,12 +82,6 @@
 }
 
 /* full detail section starts */
-
-section{
-    margin-left: 3.2rem;
-    margin-right: 3.2rem;
-}
-
 .device-details{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -117,4 +119,96 @@ section{
 .device-details .div-2 h2 ,.div-3 h2{
     margin-bottom: 1rem;
     color: rgb(5, 44, 150);
+}
+
+
+
+/* responsive code */
+
+@media (max-width:1200px){
+    html{
+        font-size: 90%;
+    }
+}
+
+@media (max-width:1000px){
+    html{
+        font-size: 85%;
+    }
+}
+
+@media (max-width:800px){
+    html{
+        font-size: 70%;
+    }
+}
+
+@media (max-width:576px){
+    html{
+        font-size: 60%;
+    }
+    section{/* padding: 0 4rem; */
+        margin: 1rem 2.2rem;
+    }
+    .input{
+        padding: .3rem 6rem;
+    }
+    #search-btn{
+        padding: .5rem 1rem;
+    }
+   #search-result{
+        grid-template-columns: 1fr;
+        grid-gap: 1.5rem;
+    }
+    .device-details{
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        border: 2px solid rgb(15, 170, 218);
+        border-radius: .5rem;  
+    }
+    .device-details .div-2, .div-3 {
+        height: 12rem;
+    }
+}
+
+@media (max-width:350px){
+    html{
+        font-size: 50%;
+    }
+    .input{
+        padding: .3rem 5rem;
+    }
+    #search-btn{
+        padding: .4rem 1rem;
+    }
+}
+
+@media (max-width:300px){
+    html{
+        font-size: 45%;
+    }
+    .input{
+        padding: .3rem 4rem;
+    }
+    #search-btn{
+        padding: .3rem 1rem;
+    }
+}
+
+@media (max-width:280px){
+    html{
+        font-size: 45%;
+    }
+    .input{
+        padding: .3rem 3.3rem;
+    }
+}
+
+@media (max-width:250px){
+    html{
+        font-size: 40%;
+    }
+    .input{
+        padding: .3rem 3rem;
+    }  
 }
