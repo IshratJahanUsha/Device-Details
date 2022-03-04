@@ -1,4 +1,12 @@
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/* header section starts */
 .header{
     text-align: center;
 }
@@ -16,6 +24,14 @@
     padding: .20rem 1rem;
 }
 
+.no-result-found{
+    /* grid-column: 1 / -1; */
+    text-align: center;
+    font-size: 2rem;
+    color: gray;
+}
+
+/* display cards section starts */
 #search-result{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -32,14 +48,56 @@
 }
 
 #search-result div img {
-    width: 30%;
-    height: 30%;
+    padding: .5rem;
+    height: 16rem;
+    width: 12rem;
     margin-top: 1rem;
 }
 
+#search-result div h3{
+    color: rgb(25, 49, 100);
+}
+
 #details-btn{
+    margin-top: .5rem;
     margin-bottom: 1rem;
 }
 
+/* full detail section starts */
+.device-details{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+    box-shadow: 0px 1px 8px 1px gray;
+    border: 3px solid rgb(80, 52, 145);
+    border-radius: .5rem;
+   
+}
 
+.device-details .div1{
+    margin-top: 1rem;
+    padding: 1rem;
+}
 
+.device-details .div1 img{
+    height: 16rem;
+    width: 12rem;
+}
+
+.device-details .div1 span, .div2 span, .div3 span{
+    color: rgb(22, 144, 192);
+}
+.device-details .div2 h1 ,.div3 h1{
+    margin-bottom: 1.5rem;
+    color: rgb(69, 116, 218);
+}
+.device-details .div2 ,.div3 {
+    font-size: 1.1rem;
+    height: 15rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    justify-self: center;
+    align-self: center;
+}
